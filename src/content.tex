@@ -7,7 +7,7 @@
 \usepackage{url}
 \usepackage{afterpage}
 
-\usepackage[margin=1.3in]{geometry}
+\usepackage[margin=1.1in]{geometry}
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{float}
@@ -29,13 +29,53 @@
 
 \section{Rynek, popyt, podaż}
 
-\subsection{Wstęp}
+\subsection{Pojęcie i klasyfikacja rynków}
 
-	Dział informatyki zajmujący się algorytmami i strukturami danych zajmuje ważne miejsce w obszarze informatyki teoretycznej. W każdym programie obliczeniowym dobór odpowiednich mechanizmów przetwarzania informacji znacząco wpływa na jego wydajność. Dotyczy to zwłaszcza systemów gromadzenia danych wielkiej skali (tzw. Big Data), które z definicji wymagają przetwarzania w czasie rzeczywistym.
+Rynkiem nazywamy całoksztalt transakcji kupna i sprzedaży oraz warunków, w jakich one przebiegają. Rynek można klasyfikować według różnych kryteriów podziału: według przedmiotu obrotu (dobra i usługi konsumpcyjne), według zasięgu geograficznego (lokalny, międzynarodowy), według sytuacji rynkowej (rynek sprzedawcy/nabywcy), według stopnia jednorodności transakcji (homogeniczny bądź heterogeniczny). Zależnie od stopnia wyrównania cen wyróżnia się rynek doskonały i niedoskonały. Rynek doskonały posiada następujące cechy:
 
-\subsection{Rozwinięcie}
+\begin{itemize}
+	\item Rozproszenie po stronie popytu i podaży - każdy z podmiotów dysponuje jednakową siłą ekonomiczną i poszczególne podmioty nie mogą wpływać na kształtowanie się cen
+	\item Brak barier wejścia na rynek - możliwość łatwego wejścia i wyjścia z rynku
+	\item Przejrzystość - zarówno sprzedający i kupujący mają pełne i prawdziwe informacje o towarach i ich cenach
+	\item Jednorodność dóbr i usług - dobra o podobnym przeznaczeniu mają podobne cechy fizyczne i są postrzegane przez potencjalnych konsumentów jako jednakowe
+\end{itemize}
 
-	Kilka typów drzew jest tematem różnych kursów na pierwszym stopniu studiów inżynierskich kierunku Informatyka. Zwykle struktury te są przedstawiane w trakcie wykładów bądź ćwiczeń tablicowych, przy użyciu tradycyjnych slajdów wyświetlanych na rzutniku. Podczas ćwiczeń tablicowych drzewa rysowane są ręcznie, co znacznie utrudnia uchwycenie ich dynamicznej natury, zwłaszcza przy omawianiu różnego rodzaju rotacji. Zdecydowanym ułatwieniem byłoby wykorzystanie programów komputerowych, które umożliwiają wizualizację przebiegu operacji. Narzędzia tego typu uatrakcyjniłyby wykład, a także dałyby studentom możliwość samodzielnego zapoznania się z materiałem w wolnym od zajęć czasie.
+W rzeczywistości taki rynek występuje bardzo rzadko, zazwyczaj występują mniejsze bądź większe niedoskonałości, które zmieniają obraz rynku. Przeciwieństwem rynku doskonałego jest rynek monopolistyczny - istnieje tylko jedno przedsiębiorstwo, które całkowicie kontroluje produkcję i ceny, mimo to nadal podlega uwarunkowaniom popytu i podaży.
+
+Gospodarka wolnokonkurencyjna charakteryzuje się istnieniem wielu równorzędnych przedsiębiorstw, które w całości mają wpływ na na łączną podaż, ale w izolacji nie kontrolują jej. Pomiędzy poszczególnymi przedsiębiorstwami występuje konkurencja cenowa, a decyzje produkcyjne i handlowe podejmowane są na podstawie bieżącego stanu rynku, przez co w dłuższym okresie czasu przedsiębiorstwa najsilniejsze ugruntowują swoją pozycję na rynku, natomiast słabsze bankrutują i znikają. Zjawisko to można było zaobserwować w ostatnich dziesięcioleciach XIX wieku, kiedy to narastająca walka konkurencyjna doprowadziła do dominacji w większości gałęzi gospodarki kilku przedsiębiorstw najsilniejszych.
+
+Wielki kryzys gospodarczy w latach 1929-1933 zapoczątkował wiele przeobrażeń społeczeństw i gospodarek wielu krajów. Procesy te w istotny sposób zmieniły więzi między podmiotami gospodarczymi. Z obserwacji wynika, że o dojrzałym rynku można mówić, gdy istnieje (1)	 dominacja własności prywatnej i możliwość swobodego transferu praw własności, (2)	możliwość prowadzenia prywatnej działalności gospodarczej, (3) istnienie sprawnie działających instytucji obsługujących rynek (giełdy, banki), (4)  integralność, uniezależnienie się poszczególnych segmentów rynku
+
+
+\subsection{Funkcjonowanie rynku}
+
+Rynek jest podstawowym regulatorem procesów zachodzących w gospodarce. Podstawową rolą jest dokonywanie wyceny dóbr - cena jest ustalana przez rynek, niejako w sposób naturalny na drodze procesów rynkowych. Rynek stanowi źródło informacji dla przedsiębiorstw - udostępnia wyceny, relacje między cenami, popyt/podaż na dane dobro, informacje o kredytach itp. Jest warunkiem racjonalnego wykorzystania zasobów gospodarczych - dzięki uzyskanym informacjom możliwe jest podejmowanie decyzji opartych na rachunku ekonomicznym i badaniach statystycznych. Pozwala na ustabilizowanie się gospodarki - działania wykonywane przez producentów i konsumentów wprowadzają zaburzenia, które w określonym czasie zanikają. Weryfikuje przydatność produkcji i pozwala na dostosowanie jej do ludzkich potrzeb - efektywny popyt odzwierciedla potrzeby ludzkie, więc badanie popytu pozwala na odpowiednie zaplanowanie produkcji
+
+Rynek rozwiązuje trzy podstawowe problemy każdej gospodarki - co, jak i dla kogo produkować.
+
+\begin{itemize}
+	\item  'co' - pozwala na badanie zachowań konsumentów, którzy dokonując zakupu wpływają na popyt
+	\item 'jak' - wprowadza mechanizmy konkurencji, dzięki którym możliwe jest utrzymanie jak najniższych kosztów produkcji
+    \item 'dla kogo' - pozwala badać dochody konsumentów i odpowiednie grupy docelowe
+\end{itemize}
+
+\subsection{Popyt i podaż}
+
+Popyt na dane dobro jest ilością tego dobra, jakie nabywcy są w stanie nabyć po określonej cenie i w określonym czasie. Jest on funkcją wielu zmiennych, głównie ceny, ale także dochodów nabywców, cen dóbr substytucyjnych, gustów nabywców i innych. Zależność między popytem a ceną jest zwykle zależnością odwrotną, to znaczy, wzrost ceny powoduje spadek popytu. Zmiana ceny powoduje dwa efekty: substutycyjny i dochodowy. Efekt substytucyjny polega, w przypadku wzrostu ceny, na skłonieniu nabywcy do rezygnacji z danego dobra i zastąpieniu go dobrem tańszym. Efekt dochodowy powoduje obniżenie dochodu realnego konsumenta - za tę samą cenę możliwe jest nabycie mniejszej ilości dobra. Zależność odwrotna jest typową zależnością występującą na rzeczywistym rynku, jednakże w szczególnych okolicznościach można zaobserwować anomalie, takie jak:
+
+\begin{itemize}
+	\item popyt doskonale nieelastyczny - zmiana ceny nie powoduje zmiany popytu, występuje dla produktów, które zaspokajają niezbędne potrzeby i nie mają żadnych substytutów
+    \item popyt doskonale elastyczny - zmiana popytu nie powoduje zmiany ceny, występuje przy rynku doskonałym, w którym przy cenie wyznaczonej przez rynek (i tylko tej) przedsiębiorstwo potrafi zrealizować całą swoją produkcję.
+    \item popyt paradoksalny - wzrost ceny powoduje wzrost popytu, występuje przy dobrach prestiżowych i w przypadku spekulacji cen
+\end{itemize}
+
+Poza ceną, istnieje wiele czynników wpływających na popyt. Jednym z nich są dochody nabywcy. Jeśli wzrastają, popyt generalnie także wzrasta, natomiast w przypadku dóbr podrzędnych może spaść - przykładowo, wzrost dochodów może wiązać się z zmianą preferencji na lepsze jakościowo produkty. Innym czynnikiem są ceny dóbr substytucyjnych i komplementarnych. Wzrost ceny danego dobra substytucyjnego spowoduje wzrost popytu na inne dobro, np. wzrost ceny masła zwiększy popyt na margarynę. Z drugiej strony, spadek popytu na dane dobro spowoduje spadek popytu na dobro komplementarne - przykładowo, wzrost cen samochodów będzie się wiązał ze spadkiem popytu na benzynę.
+
+
+Podaż danego dobra jest to ilość tego dobra zaoferowana przez producentów do sprzedaży po danej cenie w określonym czasie. Jest ona, podobnie jak popyt, funkcją wielu zmiennych. Podaż i cena zmieniają się w jednym kierunku - wzrost ceny powoduje wzrost podaży. Dzieję się tak, ponieważ wzrost ceny implikuje wzrost opłacalności produkcji, co w rezultacie motywuje producenta do zwiększenia produkcji. Innymi czynnikami wpływającymi na podaż są koszty produkcji (wzrost kosztów produkcji powoduje spadek podaży), rentowność produkcji dóbr substytucyjnych, czy też polityka monetarna bądź sytuacja ekonomiczna państwa. Znaczącą różnicą między popytem i podażą jest czas reakcji na zmiany czynników określających je. Popyt w ogólnym przypadku może zareagować w bardzo krótkim czasie (przykładowo, ludzie nie pójdą do sklepów), podczas gdy podaż reaguje bardzo wolno (zmiana wielkości produkcji może trwać nawet kilka miesięcy).
+Wzajemne zmiany popytu i podaży w ramach wahań czynników na nie wpływających są istotą mechanizmu rynkowego, który ostatecznie decyduje o cenie dobra. Każda zmiana czynników wprowadzi do systemu pewne chwilowe zaburzenie, które dzięki działaniom rynku spowoduje powrót do nowego stanu równowagi. Przykładowo, załóżmy, że aktualna cena jest wyższa od ceny równowagi. Spowoduje to nadwyżkę dobra i sytuację korzystną dla nabywcy (popyt mniejszy od podaży). Po jakimś czasie konkurencja między sprzedającymi doprowadzi do spadku ceny, co przywróci stan równowagi między popytem i podażą. Cenę osiągniętą w tym stanie określa się mianem ceny równowagi rynkowej.
+
+
 
 
 
